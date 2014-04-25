@@ -1,0 +1,7 @@
+<% if @feed_items.any? %>
+	<ol class="microposts">
+		<!-- Using the syntax "render partial" instead of plain "render" because we are passing the parameter :collection which causes the partial to render each item in the collection. We can't just use render because we want to pass the parameter and it doesn't work that way. -->
+		<%= render partial: 'shared/feed_item', collection: @feed_items %>
+	</ol>
+	<%= will_paginate @feed_items %>
+<% end %>

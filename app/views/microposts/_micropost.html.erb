@@ -1,0 +1,5 @@
+<li>
+	<span class="content"><%= wrap(micropost.content) %></span>
+	<%= render '/shared/timestamp', object: micropost %>
+	<%= render '/shared/delete_link', object: micropost %>
+</li>

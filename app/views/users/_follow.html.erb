@@ -1,0 +1,5 @@
+<!-- When this form is submitted the params hash contains a relationship hash with a "followed_id" key. The relationship is instantiated but is not saved. (build vs. create). The form helper creates the object (?) that is current_user.relationships.build(followed_id: @user.id) and the hidden field is passed to the controller.-->
+<%= form_for(current_user.relationships.build(followed_id: @user.id), remote: true) do |f| %>
+	<div><%= f.hidden_field :followed_id %></div>
+	<%= f.submit "Follow", class: "btn btn-large btn-primary" %>
+<% end %>
