@@ -1,4 +1,5 @@
-== README (if you want)
+README (if you want)
+====================
 
 The [Ruby on Rails Tutorial by Michael Hartl](http://ruby.railstutorial.org/) is an extensive introductory tutorial on RoR. During the tutorial I created a small application with Twitter-like functionality where users can sign-up, sign-in, create microposts, follow other users and see their microposts in their "feed". 
 
